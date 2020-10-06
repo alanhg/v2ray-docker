@@ -5,13 +5,13 @@ v2ray deploy by docker
 
 Notice: `CentOS 7 x64`
 
-1. replace ray.me,xxx@gmail.com with your domain name,email
-2. setting your clients id on v2ray/config.json  
-3. add dns a record vps ip on site
-4. deploy ss service
+1. add dns a record vps ip on site
+2. deploy ss service
     - yum install -y unzip
     - curl -LJO https://github.com/alanhg/v2ray-docker/archive/own-use.zip
     - unzip v2ray-docker-own-use.zip
+    - replace ray.alanhe.me,qianghe421@gmail.com with your domain name,email
+    - setting your clients id on v2ray/config.json  
     - execute the following command
 
 	```bash
