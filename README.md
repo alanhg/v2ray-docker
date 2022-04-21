@@ -7,24 +7,26 @@ Notice: `CentOS 7 x64`
 
 1. add dns a record vps ip on site
 2. deploy ss service
-    - yum install -y unzip
-    - curl -LJO curl -LJO https://github.com/alanhg/v2ray-docker/archive/refs/tags/own-use.zip
-    - unzip v2ray-docker-own-use.zip
-    - replace ray.alanhe.me,qianghe421@gmail.com with your domain name,email
-      - init-letsencrypt.sh
-      - nginx/conf.d/default.conf
-    - setting your clients id on v2ray/config.json  
-    - execute the following command
+   ```sh
+   yum install -y unzip
+   curl -LJO curl -LJO https://github.com/alanhg/v2ray-docker/archive/refs/tags/own-use.zip
+   unzip v2ray-docker-own-use.zip
+   
+   # replace ray.alanhe.me,qianghe421@gmail.com with your domain name,email, file: init-letsencrypt.sh, nginx/conf.d/default.conf
+   
+   
+   # following setting is optional
+   # setting your clients id, file: v2ray/config.json 
+   # setting ws path, file: nginx/conf.d/default.conf, nginx/conf.d/default.conf
+   
+   # execute the following command
+   chmod +x ./*.sh
+   ./init-v2ray.sh
 
-	```bash
-	$ chmod +x ./*.sh
-	$ ./init-v2ray.sh
-	
-		
-	# Pay attention to time zone
-	$ timedatectl set-timezone Asia/Shanghai
-	
-	```
+   # setting timezone 
+   timedatectl set-timezone Asia/Shanghai
+   
+   ```
  
 ## Speed Test 
 
