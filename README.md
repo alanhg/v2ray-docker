@@ -11,6 +11,8 @@ Notice: `CentOS 7 x64`
     - curl -LJO curl -LJO https://github.com/alanhg/v2ray-docker/archive/refs/tags/own-use.zip
     - unzip v2ray-docker-own-use.zip
     - replace ray.alanhe.me,qianghe421@gmail.com with your domain name,email
+      - init-letsencrypt.sh
+      - nginx/conf.d/default.conf
     - setting your clients id on v2ray/config.json  
     - execute the following command
 
