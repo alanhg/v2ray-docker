@@ -43,6 +43,7 @@ $ wget -qO- git.io/superbench.sh | bash
 
 ### Surge
 ```
+[Proxy]
 proxy1 = vmess, ray.me, 443, username=3fc6edef-eae9-400a-be45-220ff5aa982e, ws=true, ws-path=/helloworld, tls=true
 ```
 
