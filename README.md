@@ -37,3 +37,28 @@ $ wget -qO- bench.sh | bash
 # home
 $ wget -qO- git.io/superbench.sh | bash
 ```
+
+
+## Client Config
+
+### Surge
+```
+proxy1 = vmess, ray.me, 443, username=3fc6edef-eae9-400a-be45-220ff5aa982e, ws=true, ws-path=/helloworld, tls=true
+```
+
+### Clash
+```
+proxies:
+  - 
+    name: proxy1
+    type: vmess
+    server: ray.me
+    port: 443
+    uuid: 3fc6edef-eae9-400a-be45-220ff5aa982e
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /helloworld
+```
