@@ -60,6 +60,8 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: false
+    servername: ray.me
     network: ws
-    ws-path: /helloworld
+    ws-opts:
+     path: /helloworld
 ```
