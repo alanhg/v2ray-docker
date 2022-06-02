@@ -5,6 +5,8 @@ v2ray deploy by docker
 
 Notice: `CentOS 7 x64`
 
+Don't use CentOS 8
+
 1. add dns a record vps ip on site
 2. deploy ss service
    ```sh
